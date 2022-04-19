@@ -1,19 +1,18 @@
 <template>
-  <div class="content-here">
-   <h1 class="content">&lt;&hyphen;&hyphen; Content goes here &hyphen;&hyphen;&gt;</h1>
-   <div
+  <div>
+    <contentHere
         v-for="(element, index) in series"
         :key="index"
         :src="element.thumb"
-      >
-   </div>
-
+    />
   </div>
 </template>
 
 <script>
+import contentHere from './contentHere.vue'
 export default {
-  name: 'contentHere',
+  components: { contentHere },
+  name: 'navBar',
   props: {
     msg: String
   },
@@ -97,16 +96,14 @@ export default {
     }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
-    .content-here{
-        background-color: black;
-    }
-    .content{
-        color: white;
-        padding: 60px;
-    }
+  
 </style>
+
+
+
+

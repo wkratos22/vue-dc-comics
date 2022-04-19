@@ -7,7 +7,7 @@
     </div>
 
     <div>
-      <contentHere/>
+      <comics/>
     </div>
 
     <div>
@@ -21,17 +21,19 @@
 
 <script>
 import navBar from './components/navBar.vue'
-import ContentHere from './components/contentHere.vue'
+// import ContentHere from './components/contentHere.vue'
 import blueBar from './components/blueBar.vue'
 import primoFooter from './components/primoFooter.vue'
+import comics from './components/comics.vue'
 
 export default {
   name: 'App',
   components: {
     navBar,
-    ContentHere,
+    // ContentHere,
     blueBar,
     primoFooter,
+    comics,
   }
 }
 </script>
